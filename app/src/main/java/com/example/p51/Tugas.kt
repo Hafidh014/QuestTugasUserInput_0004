@@ -115,6 +115,13 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                         )
                     )
 
+                    Spacer(
+                        modifier = Modifier.height(
+                            dimensionResource(R.dimen.small_spacing)
+                        )
+                    )
+
+
                 }
             }
         }
