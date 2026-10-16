@@ -287,5 +287,18 @@ fun BiodataForm() {
             }
         }
 
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.small_spacing)
+            )
+        )
+
+        Text(
+            text = stringResource(R.string.choose_skill),
+            color = colorResource(R.color.text_primary),
+            fontSize = dimensionResource(R.dimen.body_size).value.sp,
+            fontWeight = FontWeight.Bold
+        )
+
     }
 }
