@@ -330,5 +330,15 @@ fun BiodataForm() {
             )
         )
 
+        val formValid = firstName.isNotBlank() &&
+                lastName.isNotBlank() &&
+                email.isNotBlank() &&
+                android.util.Patterns.EMAIL_ADDRESS
+                    .matcher(email).matches() &&
+                selectedDate != null &&
+                selectedExperience.isNotBlank() &&
+                (androidSkill || uiuxSkill || webSkill)
+
+
     }
 }
