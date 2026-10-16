@@ -244,5 +244,29 @@ fun BiodataForm() {
                 )
             }
 
+            Box(modifier = Modifier.weight(1f)) {
+                OutlinedTextField(
+                    value = selectedExperience,
+                    onValueChange = {},
+                    readOnly = true,
+                    label = {
+                        Text(stringResource(R.string.experience))
+                    },
+                    trailingIcon = {
+                        Text(
+                            text = stringResource(R.string.dropdown_symbol),
+                            modifier = Modifier.clickable {
+                                experienceExpanded = true
+                            }
+                        )
+                    },
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            experienceExpanded = true
+                        }
+                )
+
     }
 }
