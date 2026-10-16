@@ -95,7 +95,16 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                     )
                 )
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .verticalScroll(rememberScrollState())
+                        .padding(
+                            dimensionResource(R.dimen.card_padding)
+                        )
+                ) {
 
+                }
             }
         }
     }
