@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">260dp</dimen>
+    <dimen name="card_top_overlap">24dp</dimen>
+
+    <dimen name="card_radius">30dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="body_size">12sp</dimen>
+    <dimen name="skill_text_size">10sp</dimen>
+
+    <dimen name="field_spacing">8dp</dimen>
+    <dimen name="section_spacing">20dp</dimen>
+    <dimen name="small_spacing">8dp</dimen>
+
+    <dimen name="checkbox_size">32dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_radius">16dp</dimen>
+</resources>
