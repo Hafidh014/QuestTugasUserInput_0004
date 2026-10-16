@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">P5.1</string>
 
+    <string name="form_title">Form Biodata</string>
+    <string name="form_subtitle">Silahkan isi biodata Anda dibawah ini !!!</string>
+
+    <string name="first_name">Nama Depan</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="email">Email</string>
+    <string name="birth_date">Tgl Lahir</string>
+    <string name="experience">Experience</string>
+    <string name="choose_skill">Pilih Skill Anda :</string>
+
+    <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+
+    <string name="button_proceed">Proceed</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="header_description">Gambar latar header neon</string>
+    <string name="date_pattern">dd/MM/yyyy</string>
+    <string name="calendar_symbol">▦</string>
+    <string name="dropdown_symbol">▾</string>
 </resources>
