@@ -339,6 +339,25 @@ fun BiodataForm() {
                 selectedExperience.isNotBlank() &&
                 (androidSkill || uiuxSkill || webSkill)
 
-
+        Button(
+            onClick = {
+                // Aksi setelah form valid dapat ditambahkan di sini.
+            },
+            enabled = formValid,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(dimensionResource(R.dimen.button_height)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = colorResource(R.color.purple_primary),
+                contentColor = colorResource(R.color.white),
+                disabledContainerColor = colorResource(R.color.button_disabled),
+                disabledContentColor = colorResource(R.color.white)
+            ),
+            shape = RoundedCornerShape(
+                dimensionResource(R.dimen.button_radius)
+            )
+        ) {
+            Text(stringResource(R.string.button_proceed))
+        }
     }
 }
