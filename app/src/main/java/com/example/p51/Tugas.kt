@@ -103,6 +103,17 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                             dimensionResource(R.dimen.card_padding)
                         )
                 ) {
+                    Text(
+                        text = stringResource(R.string.form_title),
+                        color = colorResource(R.color.blue),
+                        fontSize = dimensionResource(
+                            R.dimen.title_size
+                        ).value.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.align(
+                            Alignment.CenterHorizontally
+                        )
+                    )
 
                 }
             }
