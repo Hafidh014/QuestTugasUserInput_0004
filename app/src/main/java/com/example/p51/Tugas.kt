@@ -138,6 +138,7 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                         )
                     )
 
+                    BiodataForm()
                 }
             }
         }
