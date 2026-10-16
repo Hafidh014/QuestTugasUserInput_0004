@@ -394,3 +394,29 @@ fun BiodataForm() {
         }
     }
 }
+
+
+@Composable
+fun SkillCheckbox(
+    label: String,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Checkbox(
+            checked = checked,
+            onCheckedChange = onCheckedChange,
+            modifier = Modifier.size(
+                dimensionResource(R.dimen.checkbox_size)
+            )
+        )
+
+        Text(
+            text = label,
+            color = colorResource(R.color.text_secondary),
+            fontSize = dimensionResource(R.dimen.skill_text_size).value.sp
+        )
+    }
+}
