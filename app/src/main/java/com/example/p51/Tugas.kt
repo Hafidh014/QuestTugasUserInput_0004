@@ -121,6 +121,16 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                         )
                     )
 
+                    Text(
+                        text = stringResource(R.string.form_subtitle),
+                        color = colorResource(R.color.text_secondary),
+                        fontSize = dimensionResource(
+                            R.dimen.body_size
+                        ).value.sp,
+                        modifier = Modifier.align(
+                            Alignment.CenterHorizontally
+                        )
+                    )
 
                 }
             }
