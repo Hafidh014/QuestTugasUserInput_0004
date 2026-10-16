@@ -66,6 +66,17 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
+            Image(
+                painter = painterResource(R.drawable.foto1),
+                contentDescription = stringResource(
+                    R.string.header_description
+                ),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(headerHeight)
+                    .align(Alignment.TopCenter)
+            )
 
         }
     }
