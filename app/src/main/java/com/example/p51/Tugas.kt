@@ -78,6 +78,25 @@ fun TugasScreen(modifier: Modifier = Modifier) {
                     .align(Alignment.TopCenter)
             )
 
+            Card(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(top = headerHeight - overlap),
+                shape = RoundedCornerShape(
+                    topStart = dimensionResource(R.dimen.card_radius),
+                    topEnd = dimensionResource(R.dimen.card_radius)
+                ),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(R.color.white)
+                ),
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = dimensionResource(
+                        R.dimen.card_elevation
+                    )
+                )
+            ) {
+
+            }
         }
     }
 }
