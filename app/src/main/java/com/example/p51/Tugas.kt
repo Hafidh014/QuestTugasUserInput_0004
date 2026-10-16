@@ -209,6 +209,40 @@ fun BiodataForm() {
             modifier = Modifier.fillMaxWidth()
         )
 
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(fieldSpacing),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(modifier = Modifier.weight(1f)) {
+                OutlinedTextField(
+                    value = selectedDate?.let { millis ->
+                        SimpleDateFormat(
+                            stringResource(R.string.date_pattern),
+                            Locale.getDefault()
+                        ).format(Date(millis))
+                    }.orEmpty(),
+                    onValueChange = {},
+                    readOnly = true,
+                    label = {
+                        Text(stringResource(R.string.birth_date))
+                    },
+                    trailingIcon = {
+                        Text(
+                            text = stringResource(R.string.calendar_symbol),
+                            modifier = Modifier.clickable {
+                                showDatePicker = true
+                            }
+                        )
+                    },
+                    singleLine = true,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            showDatePicker = true
+                        }
+                )
+            }
 
     }
 }
