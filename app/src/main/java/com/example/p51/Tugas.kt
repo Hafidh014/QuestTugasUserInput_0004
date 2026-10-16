@@ -144,3 +144,33 @@ fun TugasScreen(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun BiodataForm() {
+    var firstName by remember { mutableStateOf("") }
+    var lastName by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+
+    var selectedExperience by remember { mutableStateOf("") }
+    var experienceExpanded by remember { mutableStateOf(false) }
+
+    var selectedDate by remember { mutableStateOf<Long?>(null) }
+    var showDatePicker by remember { mutableStateOf(false) }
+
+    var androidSkill by remember { mutableStateOf(false) }
+    var uiuxSkill by remember { mutableStateOf(false) }
+    var webSkill by remember { mutableStateOf(false) }
+
+    val experienceOptions = stringArrayResource(
+        R.array.experience_options
+    )
+
+    val fieldSpacing = dimensionResource(R.dimen.field_spacing)
+
+    Column(
+        verticalArrangement = Arrangement.spacedBy(fieldSpacing)
+    ) {
+
+    }
+}
