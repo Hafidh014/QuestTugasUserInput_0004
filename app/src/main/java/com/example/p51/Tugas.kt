@@ -324,6 +324,11 @@ fun BiodataForm() {
             )
         }
 
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.section_spacing)
+            )
+        )
 
     }
 }
