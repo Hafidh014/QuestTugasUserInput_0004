@@ -196,5 +196,19 @@ fun BiodataForm() {
             )
         }
 
+        OutlinedTextField(
+            value = email,
+            onValueChange = { email = it },
+            label = {
+                Text(stringResource(R.string.email))
+            },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Email
+            ),
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+
     }
 }
