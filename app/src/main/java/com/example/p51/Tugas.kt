@@ -268,5 +268,24 @@ fun BiodataForm() {
                         }
                 )
 
+                DropdownMenu(
+                    expanded = experienceExpanded,
+                    onDismissRequest = {
+                        experienceExpanded = false
+                    }
+                ) {
+                    experienceOptions.forEach { option ->
+                        DropdownMenuItem(
+                            text = { Text(option) },
+                            onClick = {
+                                selectedExperience = option
+                                experienceExpanded = false
+                            }
+                        )
+                    }
+                }
+            }
+        }
+
     }
 }
