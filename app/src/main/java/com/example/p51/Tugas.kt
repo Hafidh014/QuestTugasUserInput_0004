@@ -171,6 +171,30 @@ fun BiodataForm() {
     Column(
         verticalArrangement = Arrangement.spacedBy(fieldSpacing)
     ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(fieldSpacing)
+        ) {
+            OutlinedTextField(
+                value = firstName,
+                onValueChange = { firstName = it },
+                label = {
+                    Text(stringResource(R.string.first_name))
+                },
+                singleLine = true,
+                modifier = Modifier.weight(1f)
+            )
+
+            OutlinedTextField(
+                value = lastName,
+                onValueChange = { lastName = it },
+                label = {
+                    Text(stringResource(R.string.last_name))
+                },
+                singleLine = true,
+                modifier = Modifier.weight(1f)
+            )
+        }
 
     }
 }
